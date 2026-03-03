@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-574424504478015280
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mat_Clouds
+  m_Shader: {fileID: -6465566751694194690, guid: 91d4736596c61df4b8d8f39b7b56e4dd, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: _Base_Strength _Noise_Edge_2
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Base_Scale: 0.009
+    - _Base_Speed: 1
+    - _Base_Strength: 0.94
+    - _Curvature_Radius: 521.2
+    - _Emission_Streigth: 0
+    - _Noise_Edge_1: -1
+    - _Noise_Edge_2: 2
+    - _Noise_Height: 20
+    - _Noise_Power: 0.01
+    - _Noise_Scale: 11
+    - _Noise_Speed: 20
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _fresnel_opacity: 0.74
+    - _fresnel_pwr: 17.8
+    - _transparency_range: 43.83
+    m_Colors:
+    - _Color_Peak: {r: 0.8254717, g: 1, b: 0.9968709, a: 0}
+    - _Color_Valley: {r: 0.44575986, g: 0.31372547, b: 0.85882354, a: 0}
+    - _Noise_Remap: {r: 0, g: -1.03, b: -0.82, a: 20.8}
+    - _Rotate_Projection: {r: 1, g: 0, b: 0, a: 70}
+    - _fresnel_color: {r: 0.8392157, g: 0.6475095, b: 0.38431373, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

@@ -20,7 +20,6 @@ public class S_Player : MonoBehaviour
     public CharacterController Controller => controller;
     
     [Header("Movement")]
-    //[HideInInspector]
     public bool canMove = false;
     [SerializeField] private float baseForwardSpeed = 180f;
     [SerializeField] private float maxSpeed = 2000f;
@@ -49,15 +48,19 @@ public class S_Player : MonoBehaviour
     [SerializeField] private float glideGravity = -3f;
     [SerializeField] private float jumpHeight = 3f;
     [SerializeField] private float rampJumpModifier = 0.05f;
+    
     [HideInInspector] public bool isOnRamp = false;
     
     public Vector3 Position => transform.position;
     
     private Vector3 velocity;
     public Vector3 Velocity => velocity;
+    
     private Animator animator;
     public Animator Animator => animator;
+    
     public bool IsGrounded => controller.isGrounded;
+    
     private bool isGliding;
     public bool IsGliding
     {
@@ -365,7 +368,7 @@ public class S_Player : MonoBehaviour
     public void ApplySpeedBoost()
     {
         forcedState = S_MovementState.StateType.BOOST;
-        S_A_AudioManager.Instance.PlaySFXOneShoot(S_A_AudioManager.Instance.UseSpeedBoost); //lizzy sound hinzugef�gt
+        S_A_AudioManager.Instance.PlaySFXOneShoot(S_A_AudioManager.Instance.UseSpeedBoost); 
     }
 
     #endregion
@@ -407,12 +410,14 @@ public class S_Player : MonoBehaviour
             return 180f;
         return Mathf.Rad2Deg * 2.0f * Mathf.Atan(sensorSize * 0.5f / focalLength);
     }
+    
     float VerticalFOVToFocalLength(float verticalFOV, float sensorSize)
     {
         if (verticalFOV >= 180f)
             return 0.001f;
         return sensorSize * 0.5f / Mathf.Tan(verticalFOV * Mathf.Deg2Rad * 0.5f);
     }
+    
     private IEnumerator SmoothFOVTransition(float targetFocalLength)
     {
         var sensorSize = cam.Lens.PhysicalProperties.SensorSize.y;
@@ -422,7 +427,7 @@ public class S_Player : MonoBehaviour
     
         Debug.Log($"Changing FOV from {currentFOV} to {targetFOV} (focal length: {currentFocalLength} -> {targetFocalLength})");
     
-        var duration = 0.5f; // Adjust this to control transition speed
+        var duration = 0.5f; 
         var elapsed = 0f;
     
         while (elapsed < duration)
@@ -430,7 +435,6 @@ public class S_Player : MonoBehaviour
             elapsed += Time.deltaTime;
             var t = elapsed / duration;
         
-            // Use smoothstep for eased transition (optional - you can use linear with just 't')
             t = t * t * (3f - 2f * t);
         
             var currentLerpedFOV = Mathf.Lerp(currentFOV, targetFOV, t);
@@ -439,7 +443,6 @@ public class S_Player : MonoBehaviour
             yield return null;
         }
     
-        // Ensure we end exactly at the target
         cam.Lens.FieldOfView = targetFOV;
         fovCoroutine = null;
     }
@@ -466,7 +469,7 @@ public class S_Player : MonoBehaviour
 
         Debug.Log($"Transitioning camera offset from {currentOffset} to {targetOffset}");
 
-        float duration = 0.1f; // Adjust this to control transition speed
+        float duration = 0.1f;
         float elapsed = 0f;
 
         while (elapsed < duration)
@@ -481,7 +484,6 @@ public class S_Player : MonoBehaviour
             yield return null;
         }
 
-        // Ensure we end exactly at the target
         camFollow.FollowOffset.x = targetOffset;
         offsetCoroutine = null;
     }
@@ -493,7 +495,7 @@ public class S_Player : MonoBehaviour
     
         Debug.Log($"Transitioning camera offset from {currentOffset} to {targetOffset}");
     
-        float duration = 0.3f; // Adjust this to control transition speed
+        float duration = 0.3f; 
         float elapsed = 0f;
     
         while (elapsed < duration)
@@ -501,7 +503,6 @@ public class S_Player : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = elapsed / duration;
         
-            // Use smoothstep for eased transition
             t = t * t * (3f - 2f * t);
         
             float lerpedOffset = Mathf.Lerp(currentOffset, targetOffset, t);
@@ -510,7 +511,6 @@ public class S_Player : MonoBehaviour
             yield return null;
         }
     
-        // Ensure we end exactly at the target
         camFollow.FollowOffset.y = targetOffset;
         offsetCoroutine = null;
     }

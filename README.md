@@ -1,18 +1,18 @@
 
 <img width="1200" height="400" alt="flowzone_git_banner" src="https://github.com/user-attachments/assets/7669b7db-be58-4785-ba61-a78716ade8f5" />
 
-## Overview
 <div align="center">
-
+&nbsp;
+  
 **Flowzone is a challenging endless flyer, where the player glides through an atmospheric, procedurally generated world.** 
 
 **Dodge Obstacles and collect skills and chase the high score, while the speed and challenge progressively increases.**
 
-༄ °. ⋆༺ 𖤓 ༻⋆. ° ༄ °. ⋆༺ ☾  ༻⋆. ° ༄
+༄ °. ⋆༺ 𖤓 ༻⋆. ° ⟡ °. ⋆༺ ☾  ༻⋆. ° ༄
 
 <img alt="flowzone_gameplay_gif" src="https://github.com/user-attachments/assets/2d7fb845-3cf4-4fe4-8197-c6ab54f4e87b">
 
-༄ °. ⋆༺ 𖤓 ༻⋆. ° ༄ °. ⋆༺ ☾  ༻⋆. ° ༄
+༄ °. ⋆༺ 𖤓 ༻⋆. ° ⟡ °. ⋆༺ ☾  ༻⋆. ° ༄
 </div>
 &nbsp;
 
@@ -30,7 +30,7 @@ Play it [here](https://s4g.itch.io/flowzone)
 
 ## My Responsibilities
 
-I was one of two engineers working on Flowzone and I was primarily responsible for gameplay systems, the core architecture, as well as performance optimisation during the end of the development.
+I was one of [two](https://github.com/Artur-92) engineers working on Flowzone and I was primarily responsible for gameplay systems, the core architecture, as well as performance optimisation during the end of the development.
 
 My main contributions include :
 - Building the **Player controller** and the according **State Machine**

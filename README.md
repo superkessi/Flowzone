@@ -26,7 +26,10 @@ Flowzone was developed as a **10 week** long, student project at [**School4Games
 
 Play it [here](https://s4g.itch.io/flowzone)
 
----
+&nbsp;
+<div align="center">
+༄ °. ⋆༺ 𖤓 ༻⋆. ° ⟡ °. ⋆༺ ☾  ༻⋆. ° ༄
+</div>
 
 ## My Responsibilities
 
@@ -37,7 +40,10 @@ My main contributions include :
 - Designed and developed the **Modular world generation** and implemented **object pooling** for the individual modules
 - A lot of refactoring and getting my hands on performance optimisation
 
----
+&nbsp;
+<div align="center">
+༄ °. ⋆༺ 𖤓 ༻⋆. ° ⟡ °. ⋆༺ ☾  ༻⋆. ° ༄
+</div>
 
 ## Highlights
 

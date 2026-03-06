@@ -2,21 +2,25 @@
 <img width="1200" height="400" alt="flowzone_git_banner" src="https://github.com/user-attachments/assets/7669b7db-be58-4785-ba61-a78716ade8f5" />
 
 ## Overview
+<div align="center">
 
 **Flowzone is a challenging endless flyer, where the player glides through an atmospheric, procedurally generated world.** 
 
 **Dodge Obstacles and collect skills and chase the high score, while the speed and challenge progressively increases.**
 
-<p align="center">
-	<img alt="flowzone_gameplay_gif" src="https://github.com/user-attachments/assets/2d7fb845-3cf4-4fe4-8197-c6ab54f4e87b">
-</p>
+༄ °. ⋆༺ 𖤓 ༻⋆. ° ༄ °. ⋆༺ ☾  ༻⋆. ° ༄
 
+<img alt="flowzone_gameplay_gif" src="https://github.com/user-attachments/assets/2d7fb845-3cf4-4fe4-8197-c6ab54f4e87b">
+
+༄ °. ⋆༺ 𖤓 ༻⋆. ° ༄ °. ⋆༺ ☾  ༻⋆. ° ༄
+</div>
+&nbsp;
 
 Flowzone was developed as a **10 week** long, student project at [**School4Games**](https://www.school4games.net) in 2025. 
 
-**Engine     :** Unity 6000.0.51f1
+**Engine     :** Unity 6000.0.51f1 
 
-**Tools        :** Perforce (Version Control)
+**Tools        :** Perforce (Version Control) 
 
 **Team size :** 11 full time (1 producer, 3 game designer, 2 engineers, 5 artists)
 
